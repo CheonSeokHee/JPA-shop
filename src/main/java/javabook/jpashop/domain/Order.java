@@ -3,6 +3,8 @@ package javabook.jpashop.domain;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "ORDERS")
@@ -12,12 +14,29 @@ public class Order {
     @Column(name="ORDER_ID")
     private  Long id;
 
-    @Column(name="MEMBER_ID")
-    private  Long memberId;
+//    @Column(name="MEMBER_ID")
+//    private  Long memberId;
 
+    @ManyToOne
+    @JoinColumn(name = "MEMBER_ID")
+    private Member member;
 
-    private  Member member;
+    @OneToMany(mappedBy = "order")
+    private List<OrderItem> orderItems = new ArrayList<>();
 
+    private LocalDateTime orderDate;
+
+    @Enumerated(EnumType.STRING)
+    private OrderStatus status;
+
+    //연관관계 편의 메소드 만들기
+    //양방향 으로 선언 == 하지만 웬만하면 단방향으로 매핑하는 설계를 하자!!!
+    public void addOrderItem(OrderItem orderItem){
+
+        orderItems.add(orderItem);
+        orderItem.setOrder(this);
+
+    }
     public Member getMember() {
         return member;
     }
@@ -26,25 +45,12 @@ public class Order {
         this.member = member;
     }
 
-    private LocalDateTime orderDate;
-
-    @Enumerated(EnumType.STRING)
-    private OrderStatus status;
-
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public Long getMemberId() {
-        return memberId;
-    }
-
-    public void setMemberId(Long memberId) {
-        this.memberId = memberId;
     }
 
     public OrderStatus getStatus() {

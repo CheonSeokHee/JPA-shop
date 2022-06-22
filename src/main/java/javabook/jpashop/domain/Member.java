@@ -4,10 +4,13 @@ package javabook.jpashop.domain;
 import com.sun.org.apache.xpath.internal.operations.Or;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Member {
-
+    //회원은 회원만 가지고 있다는 생각으로 설계를 하자
+    //주문이 필요하면 주문쪽에서 해결
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "MEMBER_ID")
     private Long id;
@@ -16,6 +19,8 @@ public class Member {
     private String street;
     private String zipcode;
 
+    @OneToMany(mappedBy = "memeber")
+    private List<Order> orders = new ArrayList<>();
 
     public Long getId() {
         return id;

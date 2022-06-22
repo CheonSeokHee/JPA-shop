@@ -4,19 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d9cf4ee-1e60-4077-9efa-156bacfacb85" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/JpaMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+    <list default="true" id="1d9cf4ee-1e60-4077-9efa-156bacfacb85" name="Changes" comment="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/JpaMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Member.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +38,14 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="javabook.jpashop.domain" />
@@ -88,8 +82,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652941986722</updated>
-      <workItem from="1652941989043" duration="14224000" />
+      <workItem from="1652941989043" duration="16168000" />
+      <workItem from="1655362410338" duration="7478000" />
+      <workItem from="1655858371609" duration="2189000" />
     </task>
+    <task id="LOCAL-00001" summary="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법">
+      <created>1653353062878</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653353062878</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,5 +109,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법" />
   </component>
 </project>

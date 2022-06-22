@@ -1,12 +1,12 @@
 package javabook.jpashop;
 
+import javabook.jpashop.domain.Item;
 import javabook.jpashop.domain.Member;
 import javabook.jpashop.domain.Order;
+import javabook.jpashop.domain.OrderItem;
+import jdk.nashorn.internal.runtime.ECMAException;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import javax.persistence.*;
 import java.lang.reflect.Method;
 
 public class JpaMain {
@@ -18,11 +18,25 @@ public class JpaMain {
         EntityManager em = emf.createEntityManager();
         EntityTransaction tx = em.getTransaction();
         //EntityManagerFactory 를 받아와서, EntityManager를 받아 온 뒤, 거기에서 Transaction을 받음
-        //트랜잭션 안에서 Member를 생성 해서 em.persisst로 저장.
+        //트랜잭션 안에서 Member를 생성 해서 em.persist로 저장.
         tx.begin();
 
+        try{
+              Order order = new Order();
+              em.persist(order);
 
-        Member member = new Member();
+              OrderItem orderItem = new OrderItem();
+              orderItem.setOrder(order);
+
+              em.persist(orderItem);
+
+            tx.commit();
+
+        }catch (Exception e){
+
+            tx.rollback();
+        }
+      /*  Member member = new Member();
         member.setName("내가 주문한 것");
 
         Order order1 = new Order();
@@ -36,7 +50,7 @@ public class JpaMain {
         tx.commit();
 
         em.close();
-        emf.close();;
+        emf.close();;*/
 
     }
 }
