@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d9cf4ee-1e60-4077-9efa-156bacfacb85" name="Changes" comment="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법">
+    <list default="true" id="1d9cf4ee-1e60-4077-9efa-156bacfacb85" name="Changes" comment="2022-06-22 10:18 JPA 김영한 강의 &#10;실전예제2-연관관계 매핑 시작&#10;jpa-shop">
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Delivery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/DeliveryStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/JpaMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/JpaMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/javabook/jpashop/domain/OrderItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +19,25 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -84,7 +95,9 @@
       <updated>1652941986722</updated>
       <workItem from="1652941989043" duration="16168000" />
       <workItem from="1655362410338" duration="7478000" />
-      <workItem from="1655858371609" duration="2189000" />
+      <workItem from="1655858371609" duration="6630000" />
+      <workItem from="1655880819030" duration="595000" />
+      <workItem from="1655881682475" duration="5540000" />
     </task>
     <task id="LOCAL-00001" summary="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법">
       <created>1653353062878</created>
@@ -93,18 +106,41 @@
       <option name="project" value="LOCAL" />
       <updated>1653353062878</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2022-06-22 10:18 JPA 김영한 강의 &#10;실전예제2-연관관계 매핑 시작&#10;jpa-shop">
+      <created>1655860746400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655860746400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -112,6 +148,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법" />
-    <option name="LAST_COMMIT_MESSAGE" value="2022-05-24 JPA 김영한 강의 &#10;객체 지향 쿼리언어1- 기본문법" />
+    <MESSAGE value="2022-06-22 10:18 JPA 김영한 강의 &#10;실전예제2-연관관계 매핑 시작&#10;jpa-shop" />
+    <option name="LAST_COMMIT_MESSAGE" value="2022-06-22 10:18 JPA 김영한 강의 &#10;실전예제2-연관관계 매핑 시작&#10;jpa-shop" />
   </component>
 </project>
